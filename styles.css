@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(244, 244, 244, 0.5);
+    /* Change the opacity value (0.8) as needed */
+    background-image: url('imgs/City_Landscape_Background.jpg');
+    /* Replace 'background-image.jpg' with your own image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.work {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+
+}
+
+.work h2 {
+    font-size: 1em;
+    /* Adjust font size as needed */
+    display: -webkit-box;
+    /* Display as a flexible box */
+    -webkit-line-clamp: 3;
+    /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    /* Arrange vertically */
+    overflow: hidden;
+    /* Hide overflow content */
+    text-overflow: ellipsis;
+    /* Add ellipsis for truncated text */
+    max-width: 100%;
+    /* Ensure the title does not exceed the width of its container */
+}
+
+
+
+.work p {
+    margin-bottom: 0;
+}
+
+.work a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.work:hover {
+    background-color: #dcdcdc;
+    /* Light Gray */
+    cursor: pointer;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Add rounded corners */
+    border: 2px solid #ccc;
+    /* Add border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+}
+
+
+
+.footer {
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    /* Set position to fixed */
+    bottom: 0;
+    /* Align to bottom of viewport */
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    /* Align items with space between */
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
+}
+
+.footer .left {
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    /* Adjust position to absolute */
+    margin-left: 20px;
+    /* Add left margin for space */
+}
+
+.footer .right {
+    bottom: -10px;
+    right: 0;
+    position: absolute;
+    /* Adjust position to absolute */
+    margin-right: 20px;
+    /* Add left margin for space */
+}
+
+
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/*------------------------ */
+/* Add a class to the body tag for the detailed view page */
+.detailed-view {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.work-detail {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.work-detail h2 {
+    margin-top: 0;
+}
+
+.work-detail p {
+    margin-bottom: 0;
+}
+
+.work-detail a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add this CSS to remove the bullets from the list */
+.datasets ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.datasets li {
+    margin-bottom: 10px;
+    /* Add some space between each dataset */
+}
