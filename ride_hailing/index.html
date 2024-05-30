@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Detail</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the main styles.css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="detailed-view"> <!-- Add the detailed-view class to the body tag -->
+
+    <div class="container">
+        <div class="title">
+            <h1></h1>
+        </div>
+
+        <div class="carousel">
+            <div class="work-detail active">
+                <h2>Realistic Urban Traffic Simulation with Ride-Hailing Services: A Revisit to Network Kernel Density
+                    Estimation (Systems Paper)</h2>
+                <div class="links">
+                    <a href="https://doi.org/10.1145/3557915.3560963" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The Paper</a>
+                    <a href="https://youtu.be/cvTtre3mnHE" target="_blank"><i class="fa fa-youtube fa-lg"></i>
+                        YouTube</a>
+                    <a href="https://github.com/jalal1/UberSim" target="_blank"><i class="fa fa-github fa-lg"></i>
+                        GitHub</a>
+
+                </div>
+                <p class="justify-text">
+                    App-based ride-hailing services, such as Uber and Lyft, have become popular thanks to technology
+                    advancements including smartphones and 4G/5G network. However, little is known about to what degree
+                    their operations impact urban traffic since Transportation Network Companies seldom share their ride
+                    data due to business and user privacy reasons. Recently, transportation engineering researchers
+                    began to collect data in large cities trying to understand the transportation impacts of
+                    ride-hailing services, so as to assist transport planning and policy making. However, (1) there does
+                    not exist a general data collection approach applicable to any city, and (2) the studies were based
+                    on historical data and cannot project the future easily even though ride-hailing services are
+                    developing quickly.
+
+                    In this paper, we introduce our approach to building a digital twin of the transportation in the
+                    medium-sized city of Birmingham, Alabama. This digital twin is a transportation simulation model
+                    that incorporates transportation modes such as public transits and ride-hailing services, in
+                    addition to private vehicles that constitute the majority of Birmingham's traffic. With this digital
+                    twin, transportation engineers can flexibly analyze the impact of ride-hailing services under
+                    different scenarios, such as "if the number of Uber drivers doubles" which could happen in the near
+                    future. The digital twin may also enable new opportunities, such as being an environment for
+                    learning policies with reinforcement learning.
+
+                    To enable realistic transportation simulation, we propose a novel approach to collect Uber ride data
+                    that is easy to carry out in any city. This approach collects app screenshots about Uber rides from
+                    Uber drivers, and uses crowdsourcing to postprocess these screenshots to extract detailed ride
+                    information. We then fit a spatiotemporal distribution of Uber rides using the collected data via
+                    network kernel density estimation (KDE). The existing network KDE method is flawed in that the
+                    contributions of different data samples are not the same, so we propose a new formulation to solve
+                    this issue. The distribution combined with population statistics from census data enable the
+                    generation of realistic Uber rides for agent-based simulation.
+                </p>
+
+                <div class="datasets">
+                    <ul>
+                        <li>
+                            <a href="6.5k_plans.zip" download><i class="fa fa-download fa-lg"></i> 6.5K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>One-day Uber trips</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="16.5k_plans.zip" download><i class="fa fa-download fa-lg"></i> 16.5K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>One-day Uber trips</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="49.5k_plans.zip" download><i class="fa fa-download fa-lg"></i> 49.5K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>One-day Uber trips</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-detail">
+                <h2>Operational Impacts of On-Demand Ride-Pooling Service Options in Birmingham, AL</h2>
+                <div class="links">
+                    <a href="https://www.mdpi.com/2673-7590/3/2/30" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The
+                        Paper</a>
+                </div>
+                <p class="justify-text">
+                    Transportation Network Companies (TNCs) use online-enabled apps to provide on-demand transportation
+                    services. TNCs facilitate travelers to connect with drivers that can offer them rides for
+                    compensation using driver-owned vehicles. The ride requests can be for (a) individual or (b) shared
+                    rides. The latter, also known as ride-pooling services, accommodates requests of unrelated parties
+                    with origins and destinations along the same route who agree to share the same vehicle, usually at a
+                    discounted fare. Uber and Lyft offer ride-pooling services in select markets. Compared to individual
+                    ride requests, ride-pooling services hold better promise toward easing urban congestion by reducing
+                    the number of automobiles on the road. However, their impact on traffic operations is still not
+                    fully understood. Using Birmingham, AL as a case study, this research evaluated the impact that
+                    ride-pooling services have on traffic operations using a Multi-Agent Transport Simulation (MATSim)
+                    model of the Birmingham metro area. Scenarios were developed to simulate baseline conditions (no TNC
+                    service) and ride-pooling availability with two types of ride-pooling services, namely door-to-door
+                    (d2d) and stop-based (sB) service and three fleet sizes (200, 400, and 800 vehicles). The results
+                    indicate that when TNC vehicles are added to the network, the Vehicle Kilometers Traveled (VKT)
+                    decrease by up to 5.78% for the door-to-door (d2d) service, and up to 2.71% for stop-based (sB)
+                    services, as compared to the baseline scenario (no TNC service). The findings also suggest that an
+                    increase in the size of the ride-pooling fleet results in a rise in total ride-pooling service VKT,
+                    network-wide total VKT, and detour distance. However, increasing the size of the ride-pooling fleet
+                    also results in a decrease in the ride request rejection rates, thus benefiting the customers and
+                    decreasing the vehicle empty ratio which, in turn, benefits the TNC drivers. The results further
+                    suggest that a fleet of 200 ride-pooling vehicles can meet the current demand for service in the
+                    Birmingham region at all times, thus it is the optimal ride-pooling TNC fleet size for a
+                    medium-sized city such as Birmingham.
+                </p>
+            </div>
+
+            <div class="work-detail">
+                <h2>Quantifying the Impact of Transportation Network
+                    Companies on Urban Congestion in a Medium Sized
+                    City</h2>
+                <div class="links">
+                    <a href="https://www.davidpublisher.com/Public/uploads/Contribute/63feafdad311e.pdf"
+                        target="_blank"><i class="fa fa-file-text-o fa-lg"></i> The
+                        Paper</a>
+                </div>
+                <p class="justify-text">
+                    In the recent years, TNCs (transportation network companies) and on-demand ridesharing services have
+                    grown rapidly. Given conflicting reports on TNC impacts, a need exists to study mode choice shifts
+                    in the presence of TNC services and their effects on urban congestion. Using Birmingham, AL
+                    (Alabama) as a case study, this paper showcases the feasibility of modeling TNC services using the
+                    MATSim (Multi-Agent Transport Simulation) platform, and evaluating the impact of such services on
+                    traffic operations. Data used for the study were gathered from Uber drivers and riders through
+                    surveys, as well as the US Census. The results indicate that when 200, 400, and 800 TNC vehicles are
+                    added to the network, the VKT (vehicle kilometers traveled) increase by 22%, 23.6%, and 23.2%,
+                    respectively, compared to the baseline scenario (no TNC service). Analysis of hourly average speeds,
+                    hourly average travel times, and hourly volumes along study corridors further indicate that TNC
+                    services increase traffic congestion, in particular, during the AM/PM peak periods. Moreover, the
+                    study shows that the optimal TNC fleet size for the Birmingham region is 400 to 500 active TNC
+                    vehicles per day. Such fleet size minimizes idle time and the number of TNC vehicles hovering, which
+                    have adverse impacts on TNC drivers, and the environment while ensuring TNC service availability and
+                    reasonable waiting times for TNC customers.
+                </p>
+            </div>
+
+            <div class="dots">
+                <span class="dot active" onclick="showContainer(0)"></span>
+                <span class="dot" onclick="showContainer(1)"></span>
+                <span class="dot" onclick="showContainer(2)"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="left">
+            <p>Licensed under the MIT License | Created by <a href="https://jalal1.github.io/">Jalal Khalil</a></p>
+        </div>
+        <div class="right">
+            <p>Background image credits: <a
+                    href="https://web-backgrounds.net/urban-backgrounds/city-landscape-background">web-backgrounds.net</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+
+</html>

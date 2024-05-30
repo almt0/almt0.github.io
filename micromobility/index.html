@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Detail</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the main styles.css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="detailed-view"> <!-- Add the detailed-view class to the body tag -->
+
+    <div class="container">
+        <div class="title">
+            <h1></h1>
+        </div>
+
+        <div class="carousel">
+            <div class="work-detail active">
+                <h2>Traffic Study of Shared Micromobility Services by Transportation Simulation</h2>
+                <div class="links">
+                    <a href="https://doi.org/10.1109/BigData52589.2021.9671455" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The Paper</a>
+                    <a href="https://www.youtube.com/watch?v=irPD1wUYiOA" target="_blank"><i
+                            class="fa fa-youtube fa-lg"></i> YouTube</a>
+                </div>
+                <p class="justify-text">Micromobility refers to small, lightweight vehicles
+                    such as shared bicycles and electric scooters (e-scooters). Recently,
+                    shared micromobility services see increasing deployment in urban
+                    areas to solve the “last mile problem, where the travel distance is
+                    considered long when walking on foot, but not worth driving a car
+                    (e.g., to avoid parking). A key question to ask when deciding
+                    whether to deploy a shared micromobility service in an area is:
+                    how much car traffic can be reduced during peak hours if this
+                    service is deployed? This work answers this question by agent
+                    based transportation simulation. The key challenge here is to
+                    generate a realistic synthetic population of the target area along
+                    with their travel day-plans. </p>
+
+                <div class="datasets">
+                    <ul>
+                        <li>
+                            <a href="13.7k_plans.zip" download><i class="fa fa-download fa-lg"></i> 13.7K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>11.7K Students, and 2K Employees</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="26.7k_plans.zip" download><i class="fa fa-download fa-lg"></i> 26.7K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>11.7K Students, and 15K Employees</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="44.5k_plans.zip" download><i class="fa fa-download fa-lg"></i> 44.5K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>19.5K Students, and 25K Employees</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-detail">
+                <h2>Case Study: Veo e-scooter service in Birmingham</h2>
+                <div class="links">
+                    <a href=""><i class="fa fa-file-text-o fa-lg"></i> The Paper is under review</a>
+                </div>
+                <p class="justify-text">We develop a transportation simulation model for Birmingham, incorporating Veo
+                    e-scooter rides. This study utilizes field data from Veo’s 2021 micromobility pilot in Birmingham,
+                    covering all e-scooter rides from July 2021 to June 2022. The anonymized data, provided by Veo as
+                    part of their commitment to the City of Birmingham, includes vehicle ID, GPS coordinates of origin
+                    and destination, ride date, start time, duration, and distance. However, the actual data was not
+                    used; instead, synthetic data was generated following the distribution of the actual data.</p>
+
+                <div class="datasets">
+                    <ul>
+                        <li>
+                            <a href="veo/400_plans.zip" download><i class="fa fa-download fa-lg"></i> 400 Synthetic
+                                Plans</a>
+                        </li>
+                        <li>
+                            <a href="veo/4k_plans.zip" download><i class="fa fa-download fa-lg"></i> 4K Synthetic
+                                Plans</a>
+                        </li>
+                        <li>
+                            <a href="veo/40k_plans.zip" download><i class="fa fa-download fa-lg"></i> 40K Synthetic
+                                Plans</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-detail">
+                <h2>Micromobility as a Solution To Reduce Urban Traffic Congestion</h2>
+                <div class="links">
+                    <a href="https://scirp.org/journal/paperinformation?paperid=114470" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The
+                        Paper</a>
+                </div>
+                <p class="justify-text">
+                    Micromobility is an innovative transportation strategy that has demonstrated a great potential for
+                    congestion mitigation. However, the research on micromobility is very limited in the field of
+                    transportation. This project aims to conduct a comprehensive study to analyze, quantify, and
+                    understand the impacts of micromobility on congestion reduction and recommend corresponding
+                    intervention strategies for stakeholders. We firstly inferred origins and destinations of e-scooter
+                    trips in Washington, D.C. based on the General Bikeshare Feed Specification (GBFS) data and modeled
+                    the trip origin demand of e-scooter services. The Ordinary Linear Squares (OLS), Lasso, Decision
+                    Tree (DT), Random Forest (RF), and Boosting models were used to predict the trip origin demand in
+                    census block group level. The RF model had the best performance among the five models regarding root
+                    mean squared error (RMSE) and mean absolute error (MAE). Then we used feature importance (FI) and
+                    partial dependence plots (PDP) to interpret the RF model. The results showed that the most important
+                    category of variable was built environment variables. From PDPs, we also observed nonlinear
+                    relationships between the dependent variable and independent variables. After that, we developed an
+                    extended module for shared micromobility simulation in MATSim by applying modifications to its
+                    carsharing module. We also developed an effective pipeline to generate synthetic student plans by
+                    using different real data sources. The updated MATSim framework was utilized to generate realistic
+                    day plans for travelers in a case study that considered 500, 750 and 1000 e-scooters on and around
+                    the UAB campus. The case study results confirmed that the simulated traffic volumes are lower and
+                    travel speeds are higher when e-scooters are available, compared to the base case scenario. Then we
+                    discussed the policy related to shared micromobility operation and developed a decision-support tool
+                    that can collect and analyze the e-scooter-related data. Lastly, we created a new decision-support
+                    tool to assist cities to better monitor and analyze e-scooter usage and gather inputs from
+                    residents. We also presented policy recommendations on regulatory structure, general terms and
+                    conditions, operations oversight, public engagement, data, and infrastructure. This project provided
+                    rich insights of key factors associated with micromobility demand, examined the potential impact of
+                    deployment of e-scooters and other micromobility options on traffic operations, and generated new
+                    knowledge for stakeholders to facilitate planning micromobility policies and practices.
+                </p>
+            </div>
+
+            <div class="dots">
+                <span class="dot active" onclick="showContainer(0)"></span>
+                <span class="dot" onclick="showContainer(1)"></span>
+                <span class="dot" onclick="showContainer(2)"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="left">
+            <p>Licensed under the MIT License | Created by <a href="https://jalal1.github.io/">Jalal Khalil</a></p>
+        </div>
+        <div class="right">
+            <p>Background image credits: <a
+                    href="https://web-backgrounds.net/urban-backgrounds/city-landscape-background">web-backgrounds.net</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>

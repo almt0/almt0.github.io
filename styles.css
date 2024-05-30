@@ -20,7 +20,11 @@ body {
 }
 
 .title {
-    margin-bottom: 30px;
+    color: white; /* Set the title color to white */
+    font-weight: bold; /* Make the title bold */
+    text-align: center; /* Center the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    letter-spacing: 1px; /* Add some space between letters */
 }
 
 .work-grid {
@@ -47,7 +51,7 @@ body {
 }
 
 .work h2 {
-    font-size: 1em;
+    font-size: 1.1em;
     /* Adjust font size as needed */
     display: -webkit-box;
     /* Display as a flexible box */
@@ -154,6 +158,8 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .work-detail h2 {
@@ -181,4 +187,89 @@ body {
 .datasets li {
     margin-bottom: 10px;
     /* Add some space between each dataset */
+}
+
+.description {
+    position: relative; /* Position relative for the tooltip */
+    display: inline-block; /* Inline block for proper spacing */
+    margin-left: 10px; /* Space between icons */
+    cursor: pointer; /* Cursor change on hover */
+}
+.description .tooltip {
+    visibility: hidden; /* Hide tooltip by default */
+    width: 300px; /* Width of the tooltip */
+    background-color: #555; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Centered text */
+    border-radius: 6px; /* Rounded corners */
+    padding: 5px 0; /* Padding inside the tooltip */
+    position: absolute; /* Absolute positioning */
+    z-index: 1; /* Ensure tooltip is above other elements */
+    bottom: 125%; /* Position above the icon */
+    left: 50%; /* Center the tooltip */
+    margin-left: -100px; /* Use negative margin to center the tooltip */
+    opacity: 0; /* Hide the tooltip */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+.description .tooltip::after {
+    content: ''; /* Empty content for the arrow */
+    position: absolute; /* Absolute positioning */
+    top: 100%; /* Position at the bottom of the tooltip */
+    left: 33%; /* Center the arrow */
+    margin-left: -5px; /* Center the arrow */
+    border-width: 5px; /* Size of the arrow */
+    border-style: solid; /* Solid border */
+    border-color: #555 transparent transparent transparent; /* Arrow color */
+}
+.description:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fully visible */
+}
+
+.description .tooltip ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    padding-left: 20px; /* Add padding to align bullets properly */
+    text-align: left; /* Ensure text aligns correctly */
+    margin: 0; /* Reset margin */
+}
+.description .tooltip li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Add these styles for the carousel functionality */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.work-detail.active {
+    display: block;
+    opacity: 1;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #464545; /* Inactive dot color */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff; /* Active dot color */
+}
+
+.justify-text {
+    text-align: justify;
 }

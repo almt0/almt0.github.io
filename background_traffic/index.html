@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,135 @@
     <link rel="stylesheet" href="../styles.css"> <!-- Link to the main styles.css file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="detailed-view"> <!-- Add the detailed-view class to the body tag -->
 
-<div class="container">
-    <div class="title">
-        <h1></h1>
-    </div>
-    <div class="work-detail">
-        <h2>Realistic Transport Simulation: Tackling the Small Data Challenge with Open Data</h2>
-        <p>MATSim is the state-of-the-art open source software for agent-based transport simulation, intended for use to evaluate transportation planning models. A standard approach to use MATSim is to conduct a user survey about their day-plans of travel, from which a synthetic dataset of agents’ day-plans for an entire region is generated for transport simulation. The simulation output can be used for various evaluations, such as congestion conditions of road segments and their peak hours. This paper aims to conduct a transportation simulation on MATSim for the region of Birmingham, AL. A traditional approach based on Iterative Proportional Fitting (IPF) is not sufficient for generating a realistic synthetic population due to the small data problem: Birmingham is a small city with limited transport data statistics, and we only have a survey of 451 people for their day-plans. To tackle the small data problem, we seek the assistance of abundant open data such as US Census data, OpenStreetMap, OpenAddresses and Birmingham Business Alliance to complete the fine details realistically. We also utilize various data science and machine learning techniques to build models that utilize these open data to generate a realistic population. Preliminary tests demonstrate reasonable accuracy of the simulation results.</p>
-        <p></p>
-        <div class="links">
-            <a href="https://doi.org/10.1109/BigData47090.2019.9006457" target="_blank"><i class="fa fa-file-text-o fa-lg"></i> The Paper</a>
-            <a href="https://www.youtube.com/watch?v=ZIm0WsmKB4E" target="_blank"><i class="fa fa-youtube fa-lg"></i> YouTube</a>
+    <div class="container">
+        <div class="title">
+            <h1></h1>
         </div>
-        
-        <!-- New section for datasets -->
-        <div class="datasets">
-            <ul>
-                <li>
-                    <p>7.9K Plans - private vehicles and public transit: <a href="7.9k plans.xml" download><i class="fa fa-download fa-lg"></i> Download</a> | 
-                    <a href="demo.ipynb" target="_blank"><i class="fa fa-external-link fa-lg"></i> Open in Google Colab</a></p>
-                </li>
-                <!-- Add more datasets as needed -->
-            </ul>
+
+        <div class="carousel">
+            <div class="work-detail active">
+                <h2>Realistic Transport Simulation: Tackling the Small Data Challenge with Open Data</h2>
+                <div class="links">
+                    <a href="https://doi.org/10.1109/BigData47090.2019.9006457" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The Paper</a>
+                    <a href="https://www.youtube.com/watch?v=ZIm0WsmKB4E" target="_blank"><i
+                            class="fa fa-youtube fa-lg"></i> YouTube</a>
+                </div>
+                <p class="justify-text">MATSim is the state-of-the-art open source software for agent-based transport
+                    simulation, intended for use to evaluate transportation planning models. A standard approach to use
+                    MATSim is to conduct a user survey about their day-plans of travel, from which a synthetic dataset
+                    of agents’ day-plans for an entire region is generated for transport simulation. The simulation
+                    output can be used for various evaluations, such as congestion conditions of road segments and their
+                    peak hours. This paper aims to conduct a transportation simulation on MATSim for the region of
+                    Birmingham, AL. A traditional approach based on Iterative Proportional Fitting (IPF) is not
+                    sufficient for generating a realistic synthetic population due to the small data problem: Birmingham
+                    is a small city with limited transport data statistics, and we only have a survey of 451 people for
+                    their day-plans. To tackle the small data problem, we seek the assistance of abundant open data such
+                    as US Census data, OpenStreetMap, OpenAddresses and Birmingham Business Alliance to complete the
+                    fine details realistically. We also utilize various data science and machine learning techniques to
+                    build models that utilize these open data to generate a realistic population. Preliminary tests
+                    demonstrate reasonable accuracy of the simulation results. </p>
+
+                <div class="datasets">
+                    <ul>
+                        <li>
+                            <a href="survey.csv" download><i class="fa fa-download fa-lg"></i> Actual Survey</a>
+                            <a href="demo.ipynb" target="_blank"><i class="fa fa-external-link fa-lg"></i> Open in
+                                Google
+                                Colab</a>
+                        </li>
+
+                        <li>
+                            <a href="8k_plans.zip" download><i class="fa fa-download fa-lg"></i> 8K Synthetic Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>private vehicles and public transit</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="96k_plans.zip" download><i class="fa fa-download fa-lg"></i> 96K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>private vehicles and public transit</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="680k_plans.zip" download><i class="fa fa-download fa-lg"></i> 680K Synthetic
+                                Plans</a>
+                            <span class="description">
+                                <i class="fa fa-info-circle fa-lg"></i>
+                                <span class="tooltip">
+                                    <ul>
+                                        <li>private vehicles and public transit</li>
+                                    </ul>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-detail">
+                <h2>Potential Benefits of Increased Public Transit Ridership in Medium Sized Cities: A Case Study</h2>
+                <div class="links">
+                    <a href="https://scirp.org/journal/paperinformation?paperid=114470" target="_blank"><i
+                            class="fa fa-file-text-o fa-lg"></i> The
+                        Paper</a>
+                </div>
+                <p class="justify-text">
+                    At the beginning of the twentieth century, the United States was leading in the public transit
+                    sector, but following World War II, private automobiles became more affordable and gained
+                    popularity. Transportation infrastructure investments that increased road capacity further
+                    facilitated the increase in automobile use at the expense of reduced public transit ridership. With
+                    the increase of dependency on automobiles and the continuing growth of private automobile ownership
+                    and use, various problems became major challenges in big cities of USA. These include traffic
+                    congestion, air pollution, road and parking infrastructure costs, energy consumption, traffic
+                    safety, fewer mobility options for the non-drivers, and a decline in the image and use of public
+                    transit. This study uses a medium sized city, Birmingham as a case study to investigate the
+                    potential of public transit to reduce automobile trips and in turn improve the overall performance
+                    of the road network by addressing the abovementioned challenges. An agent-based simulation model was
+                    developed for the Birmingham metropolitan region using the Multi-agent Transport Simulation (MATSim)
+                    platform. Three scenarios were considered with gradually increased transit ridership to identify the
+                    benefits of increased public transit. Traffic volume, network average speed, and travel times were
+                    used as performance measures for the evaluation of the designated scenarios. Results suggest that
+                    modal shifts toward public transit and reduction in travel demand for an automobile can result in
+                    improvements in speed and travel time for all users. Therefore, investments for improving transit
+                    quality and frequency of service, as well as campaigns to improve the image of public transit and
+                    make it a mode of choice for transportation users can increase transit ridership and, in turn,
+                    improve network operations, thus are deemed worthy for medium sized cities.
+                </p>
+            </div>
+
+            <div class="dots">
+                <span class="dot active" onclick="showContainer(0)"></span>
+                <span class="dot" onclick="showContainer(1)"></span>
+            </div>
         </div>
     </div>
-</div>
 
-<footer class="footer">
-    <div class="left">
-        <p>Licensed under the MIT License | Built by <a href="https://jalal1.github.io/">Jalal Khalil</a></p>
-    </div>
-    <div class="right">
-        <p>Background image credits: <a href="https://web-backgrounds.net/urban-backgrounds/city-landscape-background">web-backgrounds.net</a></p>
-    </div>
-</footer>
-
+    <footer class="footer">
+        <div class="left">
+            <p>Licensed under the MIT License | Created by <a href="https://jalal1.github.io/">Jalal Khalil</a></p>
+        </div>
+        <div class="right">
+            <p>Background image credits: <a
+                    href="https://web-backgrounds.net/urban-backgrounds/city-landscape-background">web-backgrounds.net</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
 </body>
+
 </html>
